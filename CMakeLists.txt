@@ -20,9 +20,9 @@ include_directories(SYSTEM ${LLVM_INCLUDE_DIRS})
 separate_arguments(LLVM_DEFINITIONS_LIST NATIVE_COMMAND ${LLVM_DEFINITIONS})
 add_definitions(${LLVM_DEFINITIONS_LIST})
 
-add_library(mba_pass MODULE src/mba_pass.cpp)  # Build shared library for pass plugin
-target_compile_options(mba_pass PRIVATE -fno-rtti -Wall -Wextra)
-set_target_properties(mba_pass PROPERTIES PREFIX "")  # Disable "lib" prefix
+add_library(MbaPass MODULE src/mba_pass.cpp)  # Build shared library for pass plugin
+target_compile_options(MbaPass PRIVATE -fno-rtti -Wall -Wextra)
+set_target_properties(MbaPass PROPERTIES PREFIX "")  # Disable "lib" prefix
 
 if(CMAKE_EXPORT_COMPILE_COMMANDS)
     file(CREATE_LINK "${CMAKE_BINARY_DIR}/compile_commands.json"
