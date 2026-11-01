@@ -35,7 +35,7 @@ struct MbaPass : public PassInfoMixin<MbaPass> {
             }
         }
 
-        errs() << "[MbaPass] Found " << WorkList.size() << "integer Add instructions.\n";
+        errs() << "[MbaPass] Found " << WorkList.size() << " integer Add instructions.\n";
         if (WorkList.empty())
             return PreservedAnalyses::all();
 
