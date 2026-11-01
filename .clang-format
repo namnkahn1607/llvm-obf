@@ -1,0 +1,17 @@
+Language: Cpp
+BasedOnStyle: LLVM
+ColumnLimit: 100
+
+AccessModifierOffset: -4
+AlignAfterOpenBracket: false
+AlignConsecutiveAssignments:
+  Enabled: true
+AlignConsecutiveDeclarations:
+  Enabled: true
+AllowShortCaseLabelsOnASingleLine: true
+BreakConstructorInitializers: BeforeComma
+IndentWidth: 4
+InsertNewlineAtEOF: true
+PointerAlignment: Left
+SortIncludes: true
+TabWidth: 4
